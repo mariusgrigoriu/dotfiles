@@ -49,3 +49,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Go
 export GOPATH=$HOME
+
+# vi mode
+set -o vi
