@@ -52,3 +52,7 @@ export GOPATH=$HOME
 
 # vi mode
 set -o vi
+
+# Innovation Platform
+FLEETCTL_TUNNEL=jatrd.cloud.nlab.io:2222
+FLEETCTL_STRICT_HOST_KEY_CHECKING=false
