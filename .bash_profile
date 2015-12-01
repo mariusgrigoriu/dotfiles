@@ -53,6 +53,7 @@ export GOPATH=$HOME
 # vi mode
 set -o vi
 
-# Innovation Platform
-export FLEETCTL_TUNNEL=kpsdp.cloud.nlab.io:2222
+# Innovation Platform v1
+#export FLEETCTL_TUNNEL=kpsdp.cloud.nlab.io:2222 uxhqq
+export FLEETCTL_TUNNEL=vqzny.cloud.nlab.io:2222
 export FLEETCTL_STRICT_HOST_KEY_CHECKING=false
