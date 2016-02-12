@@ -59,7 +59,8 @@ export FLEETCTL_TUNNEL=vqzny.cloud.nlab.io:2222
 export FLEETCTL_STRICT_HOST_KEY_CHECKING=false
 
 # Set proxy vars based on network
-if [ $(networksetup -getsearchdomains "Wi-Fi") == 'nordstrom.net' ]; then
+if [[ $(networksetup -getsearchdomains "Wi-Fi") == 'nordstrom.net' ]]; then
 	export http_proxy=webproxysea.nordstrom.net:8181
 	export https_proxy=$http_proxy
+  alias noproxy='unset http_proxy https_proxy'
 fi;
