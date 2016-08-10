@@ -58,11 +58,11 @@ set -o vi
 export FLEETCTL_TUNNEL=vqzny.cloud.nlab.io:2222
 export FLEETCTL_STRICT_HOST_KEY_CHECKING=false
 
+alias proxyoff='unset http_proxy https_proxy'
+alias proxyon='export http_proxy=http://webproxysea.nordstrom.net:8181; export https_proxy=https://webproxysea.nordstrom.net:8181'
+
 # Set proxy vars based on network
 if [[ $(networksetup -getsearchdomains "Wi-Fi") == 'nordstrom.net' ]]; then
-	export http_proxy=webproxysea.nordstrom.net:8181
-	export https_proxy=$http_proxy
+	proxyon
 fi;
 
-alias proxyoff='unset http_proxy https_proxy'
-alias proxyon='export http_proxy=webproxysea.nordstrom.net:8181; export https_proxy=$http_proxy'
