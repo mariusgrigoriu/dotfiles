@@ -67,7 +67,7 @@ prompt_proxy() {
   if [ ${http_proxy+x} ]; then s="proxy"; fi
   if [ ${https_proxy+x} ]; then s="proxy"; fi
 
-  echo -e "${purple}(${s)}"
+  echo -e "${purple}(${s})"
 }
 
 if tput setaf 1 &> /dev/null; then
