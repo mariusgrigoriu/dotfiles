@@ -58,8 +58,8 @@ set -o vi
 export FLEETCTL_TUNNEL=vqzny.cloud.nlab.io:2222
 export FLEETCTL_STRICT_HOST_KEY_CHECKING=false
 
-alias proxyoff='unset http_proxy https_proxy'
-alias proxyon='export http_proxy=http://webproxysea.nordstrom.net:8181; export https_proxy=https://webproxysea.nordstrom.net:8181'
+alias proxyoff='unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY'
+alias proxyon='export http_proxy=http://webproxysea.nordstrom.net:8181; export https_proxy=https://webproxysea.nordstrom.net:8181; export HTTP_PROXY=$http_proxy; export HTTPS_PROXY=$https_proxy'
 export no_proxy=localhost,127.0.0.1,.dev.nordstrom.com,.website.nordstrom.com,.wsperf.nordstrom.com,.nordstrom.net
 
 # Set proxy vars based on network
