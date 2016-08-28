@@ -53,10 +53,9 @@ export GOPATH=$HOME
 # vi mode
 set -o vi
 
-# Innovation Platform v1
-#export FLEETCTL_TUNNEL=kpsdp.cloud.nlab.io:2222 uxhqq
-export FLEETCTL_TUNNEL=vqzny.cloud.nlab.io:2222
-export FLEETCTL_STRICT_HOST_KEY_CHECKING=false
+# Kubernetes
+alias k='kubectl'
+alias ks='k --namespace=kube-system'
 
 alias proxyoff='unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY'
 alias proxyon='export http_proxy=http://webproxysea.nordstrom.net:8181; export https_proxy=https://webproxysea.nordstrom.net:8181; export HTTP_PROXY=$http_proxy; export HTTPS_PROXY=$https_proxy'
@@ -67,5 +66,6 @@ if [[ $(networksetup -getsearchdomains "Wi-Fi") == 'nordstrom.net' ]]; then
 	proxyon
 fi;
 
+#RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
