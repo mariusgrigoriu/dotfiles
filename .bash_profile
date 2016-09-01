@@ -53,9 +53,15 @@ export GOPATH=$HOME
 # vi mode
 set -o vi
 
+# bash completion (brew install bash-completion)
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
+
 # Kubernetes
 alias k='kubectl'
 alias ks='k --namespace=kube-system'
+source <(k completion bash)
 
 alias proxyoff='unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY'
 alias proxyon='export http_proxy=http://webproxysea.nordstrom.net:8181; export https_proxy=https://webproxysea.nordstrom.net:8181; export HTTP_PROXY=$http_proxy; export HTTPS_PROXY=$https_proxy'
