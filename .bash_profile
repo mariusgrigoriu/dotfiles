@@ -30,7 +30,9 @@ if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_
 	source "$(brew --prefix)/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
-fi;
+elif [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
@@ -53,15 +55,12 @@ export GOPATH=$HOME
 # vi mode
 set -o vi
 
-# bash completion (brew install bash-completion)
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
 
 # Kubernetes
 alias k='kubectl'
 alias ks='k --namespace=kube-system'
 source <(kubectl completion bash)
+source <(helm completion)
 
 alias proxyoff='unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY'
 alias proxyon='export http_proxy=http://webproxysea.nordstrom.net:8181; export https_proxy=https://webproxysea.nordstrom.net:8181; export HTTP_PROXY=$http_proxy; export HTTPS_PROXY=$https_proxy'
