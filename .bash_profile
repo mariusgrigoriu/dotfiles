@@ -65,6 +65,10 @@ alias ks='k --namespace=kube-system'
 source <(kubectl completion bash)
 source <(helm completion)
 
+# Google Cloud
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+
 alias proxyoff='unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY'
 alias proxyon='export http_proxy=http://webproxysea.nordstrom.net:8181; export https_proxy=https://webproxysea.nordstrom.net:8181; export HTTP_PROXY=$http_proxy; export HTTPS_PROXY=$https_proxy'
 export no_proxy=localhost,127.0.0.1,.dev.nordstrom.com,.website.nordstrom.com,.wsperf.nordstrom.com,.nordstrom.net
