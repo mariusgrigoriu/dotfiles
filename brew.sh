@@ -91,6 +91,7 @@ brew install awscli
 #brew install exiv2
 brew install git
 brew install git-lfs
+brew install go
 # brew install imagemagick --with-webp
 brew install jq
 brew install kubernetes-cli
@@ -99,6 +100,7 @@ brew install kubernetes-helm
 #brew install lynx
 brew install npm
 brew install p7zip
+brew install python
 #brew install pigz
 #brew install pv
 #brew install rename
@@ -114,3 +116,7 @@ brew install tree
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Python setup
+pip install boto3 \
+            paramiko
