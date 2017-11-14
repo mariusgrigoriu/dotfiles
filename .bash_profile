@@ -1,5 +1,5 @@
 # Install GNU core utilities (those that come with macOS are outdated).
-export PATH=`$(brew --prefix coreutils)/libexec/gnubin`:$PATH
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:/usr/local/bin:$PATH";
