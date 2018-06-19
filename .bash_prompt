@@ -61,17 +61,8 @@ prompt_git() {
 	fi;
 }
 
-prompt_proxy() {
-  local s='';
-
-  if [ ${http_proxy+x} ]; then s="proxy"; fi
-  if [ ${https_proxy+x} ]; then s="proxy"; fi
-
-  echo -e "(${s})"
-}
-
 prompt_kube() {
-  echo -e "${1}kube: ${2}$(kubectl config current-context)"
+  echo -e "($(kubectl config current-context))"
 }
 
 if tput setaf 1 &> /dev/null; then
@@ -127,9 +118,7 @@ PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\]:";
 PS1+="\[${green}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
-PS1+=" \[${purple}\$(prompt_proxy)";
-PS1+="\n";
-PS1+="\$(prompt_kube \"\[${white}\]\" \"\[${cyan}\]\")";
+PS1+="\[${purple}\$(prompt_kube)";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
