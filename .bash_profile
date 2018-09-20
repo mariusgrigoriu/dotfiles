@@ -1,9 +1,3 @@
-# Install GNU core utilities (those that come with macOS are outdated).
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
-
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/bin:$PATH";
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
