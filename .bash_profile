@@ -50,7 +50,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 export GOPATH=$HOME
 
 # vi mode
-set -o vi
+#set -o vi
 
 
 # Kubernetes
@@ -62,5 +62,5 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.i
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 
 #RVM
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

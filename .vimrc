@@ -36,6 +36,7 @@ let mapleader = ","
 set backup
 set backupdir=~/tmp
 set directory=~/tmp
+set undodir=~/tmp
 
 
 "Searching and moving around
