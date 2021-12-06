@@ -52,6 +52,7 @@ brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install go
 brew install jq
+brew install awscli
 # brew install kubernetes-cli
 # brew install kubernetes-helm
 # brew install tree
