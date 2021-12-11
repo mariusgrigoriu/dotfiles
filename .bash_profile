@@ -62,11 +62,3 @@ export GOPATH=$HOME
 # Kubernetes
 alias k='kubectl'
 alias ks='k --namespace=kube-system'
-
-# Google Cloud
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
-
-#RVM
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
