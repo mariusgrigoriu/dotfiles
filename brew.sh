@@ -58,6 +58,7 @@ brew install --cask visual-studio-code
 brew install go
 brew install jq
 brew install awscli
+brew install terragrunt
 # brew install kubernetes-cli
 # brew install kubernetes-helm
 # brew install tree
