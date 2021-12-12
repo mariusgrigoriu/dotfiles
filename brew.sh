@@ -51,14 +51,17 @@ brew upgrade
 # brew install sfnt2woff-zopfli
 # brew install woff2
 
-# brew install git
-# brew install git-lfs
+# Basic dev tools
 brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install go
 brew install jq
+
+# Cloud stuff
 brew install awscli
 brew install terragrunt
+brew install ansible
+
 # brew install kubernetes-cli
 # brew install kubernetes-helm
 # brew install tree
