@@ -57,6 +57,8 @@ brew install --cask visual-studio-code
 brew install go
 brew install jq
 brew install bazelisk
+brew tap bazelbuild/tap
+brew install bazelbuild/tap/ibazel
 
 # Cloud stuff
 brew install awscli
