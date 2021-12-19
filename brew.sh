@@ -56,6 +56,7 @@ brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install go
 brew install jq
+brew install bazelisk
 
 # Cloud stuff
 brew install awscli
